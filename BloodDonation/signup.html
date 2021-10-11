@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <nav>
+    <h1 id="blood"><a href="./mainpage.html" style="color: black;">Donate Blood</a></h1>
+    <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Blood-Drop-icon-715x715.png" alt="logo" id="logo"/>
+    <ul>
+        <li id="signin-html"> <a href="./signin.html">Login</a></li>
+        <li id="signup-html"> <a href="./signup.html">Sign Up</a></li> 
+    </ul>
+</nav>
+
+    <img src="./assets/Untitled design (1).png" alt="" id="image">
+    
+    <form>
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="Age"><b>Age</b></label>
+          <input type="number" placeholder="Type in your Age" name="age" min="18" required>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter your Password" id="password" required>
+      
+          <label for="confirm-password"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+      
+          <div class="">
+            <button type="submit" class="signup"><a href="./mainpage.html" style="color: white; text-decoration: none;">Sign Up</a></button>
+          </div>
+          <hr>
+          <hr>
+
+          <a href="signin.html" class="signin">Already have an Account?</a>
+        </div>
+      </form>
+
+      <script>
+        var password = document.getElementById("password")
+        confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+        if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+        confirm_password.setCustomValidity('');
+    }
+}
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+      </script>
+      
+</body>
+</html>

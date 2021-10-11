@@ -1,0 +1,48 @@
+button {
+    width: 154px;
+    height: 50px;
+    background: #6c63ff;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.2);  
+}
+
+
+h1 {
+    margin-left: 75vh;
+}
+
+.card {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 50px;
+    margin-left: 52vh;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 10px 16px 10px rgba(0,0,0,0.2);  
+}
+
+.header {
+    height: 30%;
+    background: rgb(168, 169, 241);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+    padding: 2px 16px;
+}
